@@ -109,26 +109,26 @@ public class User_BaseClass {
 	@AfterMethod(groups={"sprint-1","Sprint-2"})
 		public void amConfig() throws Exception
 		{
-		    Thread.sleep(3000);
-		    driver.findElement(By.xpath("//span[@title='Logout']")).click();
-		    Thread.sleep(3000);
-		    driver.findElement(By.xpath("//button[.='Ok']")).click();
-		    Thread.sleep(3000);
-		    System.out.println("Logout Successfully");
+//		    Thread.sleep(3000);
+//		    driver.findElement(By.xpath("//span[@title='Logout']")).click();
+//		    Thread.sleep(3000);
+//		    driver.findElement(By.xpath("//button[.='Ok']")).click();
+//		    Thread.sleep(3000);
+//		    System.out.println("Logout Successfully");
 		}
         
 	@AfterClass(groups={"sprint-1","Sprint-2"})
 		public void acConfig() throws InterruptedException
 		{
-		try {
-			Thread.sleep(1000);
-		} catch (Exception e) {
-			Thread.sleep(1000);
-		}
-		finally {
-			driver.quit();
-			System.out.println("Browser Closed Successfully");
-		}
+//		try {
+//			Thread.sleep(1000);
+//		} catch (Exception e) {
+//			Thread.sleep(1000);
+//		}
+//		finally {
+//			driver.quit();
+//			System.out.println("Browser Closed Successfully");
+//		}
 		}
         
 	@AfterSuite(groups={"sprint-1","Sprint-2"})

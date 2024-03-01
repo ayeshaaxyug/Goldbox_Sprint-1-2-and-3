@@ -7,11 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.User_BaseClass;
 import genericUtility.WebDriverUtility;
-import objectRepository.DashboardPage;
 
+@Listeners(genericUtility.UserListnersImplementationClass.class)
 public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
 
 	WebDriverUtility wUtil = new WebDriverUtility();
@@ -178,9 +179,10 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
     		
     		driver.switchTo().window(ParentWin);
             
-    		Thread.sleep(10000);
+    		Thread.sleep(18000);
     		
     		WebElement ContinueBtn = driver.findElement(By.xpath("//button[.='Continue']"));
+    		wUtil.waitForElementToBeVisible(driver, ContinueBtn);
     		
     		ContinueBtn.click();
     		
@@ -247,15 +249,18 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
         Thread.sleep(2000);
         
         driver.findElement(By.xpath("//span[.='Schemes']")).click();
+        
+        Thread.sleep(2000);
+        
         driver.findElement(By.xpath("//button[.='Subscribe']")).click();
         
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         
         WebElement SelectAmountDrpDwn = driver.findElement(By.xpath("//select[@id='amount']"));
         Select s = new Select(SelectAmountDrpDwn);
         s.selectByVisibleText("1500");
         
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         
         WebElement SelectAmountDrpDwnn = driver.findElement(By.xpath("//select[@id='amount']"));
         Select ss = new Select(SelectAmountDrpDwnn);
@@ -266,7 +271,6 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
 			WebElement LivePriceError = driver.findElement(By.xpath("(//div[.=' Gold live Price Issue '])[3]"));
 			if(LivePriceError.isDisplayed())
 			{
-//				Assert.fail();
 				driver.quit();
 			}
 		} 
@@ -303,6 +307,14 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
             WebElement frame = driver.findElement(By.xpath("//iframe[@class='razorpay-checkout-frame']"));
             driver.switchTo().frame(frame);
             
+            driver.findElement(By.xpath("//input[@name='contact']")).sendKeys("6309631698");
+            
+            Thread.sleep(2000);
+            
+            driver.findElement(By.xpath("//button[.='Proceed']")).click();
+            
+            Thread.sleep(2000);
+            
             wUtil.scrollPageDown();
             
             driver.findElement(By.xpath("//div[.='Netbanking']")).click();
@@ -336,7 +348,7 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
     		
     		driver.switchTo().window(ParentWin);
             
-    		Thread.sleep(10000);
+    		Thread.sleep(20000);
     		
     		WebElement ContinueBtn = driver.findElement(By.xpath("//button[.='Continue']"));
     		

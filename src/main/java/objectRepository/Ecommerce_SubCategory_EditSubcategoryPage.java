@@ -1,9 +1,16 @@
 package objectRepository;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import genericUtility.WebDriverUtility;
 
 public class Ecommerce_SubCategory_EditSubcategoryPage {
 
@@ -61,9 +68,46 @@ public class Ecommerce_SubCategory_EditSubcategoryPage {
 	
 	//Create Business Library
 	
-	public void editSubCategory() throws Exception
+	public void editingSubCategory(WebDriver driver, String CategoryName, String SubCategoryName) throws Exception
 	{
+		Robot r = new Robot();
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
 		Thread.sleep(2000);
+		
+		wUtil.handleDropdownByVisibleText(CategoryName, CategoryNameDrpDwn);
+		
+		Thread.sleep(2000);
+		
+		SubCategoryNameEdt.clear();
+		
+		Thread.sleep(2000);
+		
+		SubCategoryNameEdt.sendKeys(SubCategoryName);
+		
+		Thread.sleep(2000);
+		
+		wUtil.handleDropdownByIndex(SelectTypeDrpDwn, 1);
+		
+		Thread.sleep(2000);
+		
+        wUtil.clickOnChooseFileOption(driver, ChooseFileBtn);
+		
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.delay(2000);
+        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\download.jpg");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_V);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        r.keyRelease(KeyEvent.VK_V);
+        r.keyPress(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+        UpdateBtn.click();
+        
+        Thread.sleep(2000);
+
+		
 		
 	}
 	

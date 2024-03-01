@@ -68,4 +68,10 @@ public class Ecommerce_SubCategoryPage {
 		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/following-sibling::td/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
+	public void clickOnParticularSchemeBootstrapBtn(WebDriver driver,String CategoryName,String SubCategoryName) throws Exception
+	{
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/../td/button[.=' Edit ']/..//div[@class='mdc-switch__ripple']")).click();
+	}
+	
 }
