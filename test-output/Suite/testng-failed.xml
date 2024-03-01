@@ -5,15 +5,26 @@
     <classes>
       <class name="sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User">
         <methods>
+          <include name="userSchemeSubscriptionUsingBookingAndBankingAccountTest"/>
           <include name="asConfig"/>
-          <include name="bcConfig"/>
           <include name="bmConfig"/>
+          <include name="bcConfig"/>
           <include name="amConfig"/>
-          <include name="userSchemeSubscriptionUsingBankingAccountTest"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
       </class> <!-- sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User -->
+      <class name="sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS">
+        <methods>
+          <include name="asConfig"/>
+          <include name="verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
