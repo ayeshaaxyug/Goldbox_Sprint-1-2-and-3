@@ -1,44 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T16:13:22 IST" name="Default suite" finished-at="2024-03-01T16:14:47 IST" duration-ms="85189">
+  <suite started-at="2024-03-02T10:07:20 IST" name="Default suite" finished-at="2024-03-02T10:08:24 IST" duration-ms="63817">
     <groups>
       <group name="sprint-1">
-        <method signature="eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS.verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest()[pri:7, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" name="verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest" class="sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS"/>
+        <method signature="cSprint_1_SchemeAllActions_Demo_FMS.schemeCreationTest()[pri:3, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" name="schemeCreationTest" class="sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS"/>
       </group> <!-- sprint-1 -->
     </groups>
-    <test started-at="2024-03-01T16:13:22 IST" name="Default test" finished-at="2024-03-01T16:14:47 IST" duration-ms="85189">
-      <class name="sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:13:22 IST" name="bsConfig" finished-at="2024-03-01T16:13:22 IST" duration-ms="5" status="PASS">
+    <test started-at="2024-03-02T10:07:20 IST" name="Default test" finished-at="2024-03-02T10:08:24 IST" duration-ms="63817">
+      <class name="sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:07:20 IST" name="bsConfig" finished-at="2024-03-02T10:07:20 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:13:22 IST" name="bcConfig" finished-at="2024-03-01T16:13:28 IST" duration-ms="6049" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:07:20 IST" name="bcConfig" finished-at="2024-03-02T10:07:24 IST" duration-ms="4277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:13:28 IST" name="bmConfig" finished-at="2024-03-01T16:13:45 IST" duration-ms="16379" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:07:24 IST" name="bmConfig" finished-at="2024-03-02T10:07:41 IST" duration-ms="16340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest()[pri:7, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:13:45 IST" name="verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest" finished-at="2024-03-01T16:14:47 IST" duration-ms="62588" status="PASS">
+        <test-method signature="schemeCreationTest()[pri:3, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:07:41 IST" name="schemeCreationTest" finished-at="2024-03-02T10:08:12 IST" duration-ms="31119" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//th[.='Title']/../../following-sibling::tbody//td)[1]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28fbc4213d9fff6d6673f38a7b7c18e9, findElement {using=xpath, value=(//th[.='Title']/../../following-sibling::tbody//td)[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51534/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28fbc4213d9fff6d6673f38a7b7c18e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//th[.='Title']/../../following-sibling::tbody//td)[1]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28fbc4213d9fff6d6673f38a7b7c18e9, findElement {using=xpath, value=(//th[.='Title']/../../following-sibling::tbody//td)[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51534/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28fbc4213d9fff6d6673f38a7b7c18e9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS.schemeCreationTest(cSprint_1_SchemeAllActions_Demo_FMS.java:192)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:14:47 IST" name="acConfig" finished-at="2024-03-01T16:14:47 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:14:47 IST" name="amConfig" finished-at="2024-03-01T16:14:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- schemeCreationTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:08:12 IST" name="amConfig" finished-at="2024-03-02T10:08:23 IST" duration-ms="10573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@7c7a06ec]" started-at="2024-03-01T16:14:48 IST" name="asConfig" finished-at="2024-03-01T16:14:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:08:23 IST" name="acConfig" finished-at="2024-03-02T10:08:24 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@3c46e67a]" started-at="2024-03-02T10:08:24 IST" name="asConfig" finished-at="2024-03-02T10:08:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS -->
+      </class> <!-- sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

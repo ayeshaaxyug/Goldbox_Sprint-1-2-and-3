@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User">
+      <class name="sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS">
         <methods>
-          <include name="userSchemeSubscriptionUsingBookingAndBankingAccountTest"/>
           <include name="asConfig"/>
-          <include name="bcConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="schemeCreationTest"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User -->
+      </class> <!-- sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

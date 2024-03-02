@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericUtility.WebDriverUtility;
+
 public class DashboardPage {
 	
 	//Finding WebElements Using @FindBy Annotations
@@ -93,10 +95,12 @@ public class DashboardPage {
 	
 	//Business Libraries
 	
-	public void clickOnMyProfileLink() throws Exception
+	public void clickOnMyProfileLink(WebDriver driver) throws Exception
 	{
+		WebDriverUtility wUtil = new WebDriverUtility();
 		Thread.sleep(3000);
-		MyProfileLnk.click();
+		wUtil.clickOnChooseFileOption(driver, MyProfileLnk);
+//		MyProfileLnk.click();
 	}
 	
 

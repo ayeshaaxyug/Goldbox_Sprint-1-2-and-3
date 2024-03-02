@@ -11,7 +11,7 @@ public class MyProfilePage {
 
     @FindBy(xpath="//a[.=' My Profile']/following-sibling::a[.='Settings']")private WebElement ProfileSettingsLnk;
     
-    @FindBy(xpath="//a[@class='dropdown-item logout pb-0']")private WebElement LogoutLnk;
+    @FindBy(xpath="//a[.='Logout ']")private WebElement LogoutLnk;
 	
     @FindBy(xpath="//button[.='Yes, Logout!']")private WebElement YesLogoutLnk;
     

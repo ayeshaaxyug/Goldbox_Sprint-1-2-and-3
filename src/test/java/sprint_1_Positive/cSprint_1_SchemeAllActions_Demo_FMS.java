@@ -189,18 +189,12 @@ public class cSprint_1_SchemeAllActions_Demo_FMS extends FMS_BaseClass {
 		
 		sPage.getSchemesListLnk().click();
 		
-		try 
-		{
-			String FirstScheme = driver.findElement(By.xpath("(//th[.='Title']/../../following-sibling::tbody//td)[1]")).getText();
-			Assert.assertEquals(SchemeTitle, FirstScheme);
-			
-			driver.findElement(By.xpath("(//th[.='Title']/../../following-sibling::tbody//td)[1]/..//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
-		} 
-		catch (Exception e) 
-		{
-			Assert.fail();
-		}
+		String FirstScheme = driver.findElement(By.xpath("(//th[.='Title']/../../following-sibling::tbody//td)[1]")).getText();
+		Assert.assertEquals(SchemeTitle, FirstScheme);
 		
+		driver.findElement(By.xpath("(//th[.='Title']/../../following-sibling::tbody//td)[1]/..//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+		
+		driver.findElement(By.xpath("//span[.='Dashboard']")).click();
 		
 		
 		
