@@ -16,6 +16,8 @@ public class Ecommerce_SubCategoryPage {
     
     @FindBy(xpath="//td[.='bangle']/following-sibling::td[.='Rose Gold Bangle']/../td/button[.=' Edit ']/..//div[@class='mdc-switch__ripple']")private WebElement ActionEnableDisableBootStrapBtn;
     
+    @FindBy(xpath ="//td[.='Gold Chains']/following-sibling::td[.='Gods Idol chains']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement DeleteBtn;
+    
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageLnk;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageLnk;
@@ -68,10 +70,16 @@ public class Ecommerce_SubCategoryPage {
 		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/following-sibling::td/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularSchemeBootstrapBtn(WebDriver driver,String CategoryName,String SubCategoryName) throws Exception
+	public void clickOnParticularCategoryBootstrapBtn(WebDriver driver,String CategoryName,String SubCategoryName) throws Exception
 	{
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/../td/button[.=' Edit ']/..//div[@class='mdc-switch__ripple']")).click();
+		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/../td/button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+	}
+	
+	public void clickOnParticularSubCategoryDeleteBtn(WebDriver driver, String CategoryName, String SubCategoryName) throws Exception
+	{
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td[.='"+SubCategoryName+"']/..//button[@class='btn-sm btn-edit bg-danger']")).click();
 	}
 	
 }

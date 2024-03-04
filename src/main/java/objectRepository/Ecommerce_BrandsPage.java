@@ -1,5 +1,6 @@
 package objectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,8 +16,10 @@ public class Ecommerce_BrandsPage {
     
     @FindBy(xpath="//td[.='Gold Boxx']/following-sibling::td/img[@class='table-img']/../following-sibling::td/button[.=' Edit ']")private WebElement ActionEditBtn;
     
-    @FindBy(xpath="//td[.='Gold Boxx']/following-sibling::td/img[@class='table-img']/../following-sibling::td/button/..//div[@class='mdc-switch__ripple']")private WebElement ActionEnableDisableBootStrapBtn;
-        
+    @FindBy(xpath="//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")private WebElement ActionEnableDisableBootStrapBtn;
+    
+    @FindBy(xpath="//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement DeleteBtn;
+    
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageLnk;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageLnk;
@@ -46,7 +49,11 @@ public class Ecommerce_BrandsPage {
 	public WebElement getActionEnableDisableBootStrapBtn() {
 		return ActionEnableDisableBootStrapBtn;
 	}
-
+	
+	public WebElement getDeleteBtn() {
+		return DeleteBtn;
+	}
+	
 	public WebElement getNextPageLnk() {
 		return NextPageLnk;
 	}
@@ -58,6 +65,23 @@ public class Ecommerce_BrandsPage {
 	
 	// Create Business Library
 	
+	public void clickOnParticularBrandEditBtn(WebDriver driver, String BrandName) throws Exception
+	{
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//td[.='"+BrandName+"']/following-sibling::td/img[@class='table-img']/../following-sibling::td/button[.=' Edit ']")).click();
+	}
+	
+	public void clickOnParticularBrandBootStrapBtn(WebDriver driver, String BrandName) throws Exception
+	{
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']"));
+	}
+	
+	public void clickOnParticularBrandDeleteBtn(WebDriver driver, String BrandName) throws Exception
+	{
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")).click();
+	}
 	
 	
 	

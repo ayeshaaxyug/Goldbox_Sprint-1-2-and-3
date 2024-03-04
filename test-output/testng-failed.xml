@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS">
+      <class name="sprint_3_Positive.F_ECommerce_Transactions_All_Actions">
         <methods>
-          <include name="asConfig"/>
-          <include name="bmConfig"/>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="schemeCreationTest"/>
-          <include name="bsConfig"/>
-          <include name="acConfig"/>
+          <include name="eCommerceTransactions"/>
         </methods>
-      </class> <!-- sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS -->
+      </class> <!-- sprint_3_Positive.F_ECommerce_Transactions_All_Actions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

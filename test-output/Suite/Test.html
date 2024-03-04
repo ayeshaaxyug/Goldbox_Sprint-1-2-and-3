@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 01 17:18:54 IST 2024</td>
+<td>Started on:</td><td>Sat Mar 02 10:13:37 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>452 seconds (452216 ms)</td>
+<tr><td>Total time:</td><td>179 seconds (179105 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,62 +76,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS.amConfig()'><b>amConfig</b><br>Test class: sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-vls-c32=&quot;&quot; class=&quot;user-info&quot;&gt;...&lt;/span&gt; is not clickable at point (1444, 29). Other element would receive the click: &lt;div role=&quot;alert&quot; class=&quot;ng-tns-c30-14 toast-message ng-star-inserted&quot; aria-label=&quot;Scheme Updated Successfully&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=122.0.6261.70)
+<td title='sprint_1_Positive.bSprint_1_LoginLogout_Demo_User.bmConfig()'><b>bmConfig</b><br>Test class: sprint_1_Positive.bSprint_1_LoginLogout_Demo_User</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@placeholder=&apos;Enter Mobile Number&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b669ef7fe454818374385fdc2a0d51e5, clickElement {id=f.93770DFB8A6DD12AB133AAED424ABA63.d.2999236FA3709766F784E22B1722D04E.e.1060}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b669ef7fe454818374385fdc2a0d51e5)] -&gt; xpath: //span[@class=&apos;user-info&apos;]]
-Session ID: b669ef7fe454818374385fdc2a0d51e5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at objectRepository.DashboardPage.clickOnMyProfileLink(DashboardPage.java:99)
-	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at genericUtility.User_BaseClass.bmConfig(User_BaseClass.java:100)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace803667589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace803667589'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-vls-c32=&quot;&quot; class=&quot;user-info&quot;&gt;...&lt;/span&gt; is not clickable at point (1444, 29). Other element would receive the click: &lt;div role=&quot;alert&quot; class=&quot;ng-tns-c30-14 toast-message ng-star-inserted&quot; aria-label=&quot;Scheme Updated Successfully&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=122.0.6261.70)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605453665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605453665'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@placeholder=&apos;Enter Mobile Number&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b669ef7fe454818374385fdc2a0d51e5, clickElement {id=f.93770DFB8A6DD12AB133AAED424ABA63.d.2999236FA3709766F784E22B1722D04E.e.1060}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b669ef7fe454818374385fdc2a0d51e5)] -&gt; xpath: //span[@class=&apos;user-info&apos;]]
-Session ID: b669ef7fe454818374385fdc2a0d51e5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at objectRepository.DashboardPage.clickOnMyProfileLink(DashboardPage.java:99)
-	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at genericUtility.User_BaseClass.bmConfig(User_BaseClass.java:100)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -139,8 +110,7 @@ Session ID: b669ef7fe454818374385fdc2a0d51e5
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -158,148 +128,8 @@ Session ID: b669ef7fe454818374385fdc2a0d51e5
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>5</td>
-<td>sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@2d1ef81a</td></tr>
-<tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.amConfig()'><b>amConfig</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@title=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61957/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at genericUtility.User_BaseClass.amConfig(User_BaseClass.java:113)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace512136513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace512136513'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@title=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61957/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at genericUtility.User_BaseClass.amConfig(User_BaseClass.java:113)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>3</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
-<tr>
-<td title='sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS.amConfig()'><b>amConfig</b><br>Test class: sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;user-info&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62027/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at objectRepository.DashboardPage.clickOnMyProfileLink(DashboardPage.java:99)
-	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638090356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1638090356'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@class=&apos;user-info&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62027/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at objectRepository.DashboardPage.clickOnMyProfileLink(DashboardPage.java:99)
-	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>4</td>
-<td>sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@6025e1b6</td></tr>
+<td>14</td>
+<td>sprint_1_Positive.bSprint_1_LoginLogout_Demo_User@2d1ef81a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -310,30 +140,15 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.amConfig()'><b>amConfig</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
+<td title='sprint_1_Positive.bSprint_1_LoginLogout_Demo_User.amConfig()'><b>amConfig</b><br>Test class: sprint_1_Positive.bSprint_1_LoginLogout_Demo_User</td>
 <td></td>
 <td>0</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
+<td>sprint_1_Positive.bSprint_1_LoginLogout_Demo_User@2d1ef81a</td></tr>
 <tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.acConfig()'><b>acConfig</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
+<td title='sprint_1_Positive.bSprint_1_LoginLogout_Demo_User.acConfig()'><b>acConfig</b><br>Test class: sprint_1_Positive.bSprint_1_LoginLogout_Demo_User</td>
 <td></td>
 <td>0</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
-<tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.bmConfig()'><b>bmConfig</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
-<td></td>
-<td>0</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
-<tr>
-<td title='sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS.acConfig()'><b>acConfig</b><br>Test class: sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS</td>
-<td></td>
-<td>0</td>
-<td>sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@2d1ef81a</td></tr>
-<tr>
-<td title='sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS.acConfig()'><b>acConfig</b><br>Test class: sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS</td>
-<td></td>
-<td>0</td>
-<td>sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@6025e1b6</td></tr>
+<td>sprint_1_Positive.bSprint_1_LoginLogout_Demo_User@2d1ef81a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -344,30 +159,10 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sprint_1_Positive.bSprint_1_LoginLogout_Demo_User.loginLogoutUserTest()'><b>loginLogoutUserTest</b><br>Test class: sprint_1_Positive.bSprint_1_LoginLogout_Demo_User</td>
-<td></td>
-<td>0</td>
-<td>sprint_1_Positive.bSprint_1_LoginLogout_Demo_User@22ff4249</td></tr>
-<tr>
-<td title='sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS.schemeCreationTest()'><b>schemeCreationTest</b><br>Test class: sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS</td>
-<td></td>
-<td>244</td>
-<td>sprint_1_Positive.cSprint_1_SchemeAllActions_Demo_FMS@2d1ef81a</td></tr>
-<tr>
-<td title='sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS.verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest()'><b>verifyingTheSubscribedUserAndPayingMonthlySchemePaymentTest</b><br>Test class: sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS</td>
-<td></td>
-<td>61</td>
-<td>sprint_1_Positive.eSprint_1_VerifyingTheSubscribedUserAndPayingMonthlySchemePayment_Demo_FMS@6025e1b6</td></tr>
-<tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.userSchemeSubscriptionUsingBankingAccountTest()'><b>userSchemeSubscriptionUsingBankingAccountTest</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
-<td></td>
-<td>12</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
-<tr>
 <td title='sprint_1_Positive.aSprint_1_LoginAndLogout_Demo_FMS.loginLogoutFmsTest()'><b>loginLogoutFmsTest</b><br>Test class: sprint_1_Positive.aSprint_1_LoginAndLogout_Demo_FMS</td>
 <td></td>
 <td>0</td>
-<td>sprint_1_Positive.aSprint_1_LoginAndLogout_Demo_FMS@45752059</td></tr>
+<td>sprint_1_Positive.aSprint_1_LoginAndLogout_Demo_FMS@34e9fd99</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -378,43 +173,33 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User.userSchemeSubscriptionUsingBookingAndBankingAccountTest()'><b>userSchemeSubscriptionUsingBookingAndBankingAccountTest</b><br>Test class: sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<td title='sprint_1_Positive.bSprint_1_LoginLogout_Demo_User.loginLogoutUserTest()'><b>loginLogoutUserTest</b><br>Test class: sprint_1_Positive.bSprint_1_LoginLogout_Demo_User</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@placeholder=&apos;Enter Mobile Number&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@title=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61957/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at genericUtility.User_BaseClass.amConfig(User_BaseClass.java:113)
+	at genericUtility.User_BaseClass.bmConfig(User_BaseClass.java:100)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1684771726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1684771726'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1333371340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1333371340'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@placeholder=&apos;Enter Mobile Number&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//span[@title=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61957/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at genericUtility.User_BaseClass.amConfig(User_BaseClass.java:113)
+	at genericUtility.User_BaseClass.bmConfig(User_BaseClass.java:100)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -422,8 +207,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -442,7 +226,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User@4c402120</td></tr>
+<td>sprint_1_Positive.bSprint_1_LoginLogout_Demo_User@2d1ef81a</td></tr>
 </table><p>
 </body>
 </html>

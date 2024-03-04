@@ -120,9 +120,9 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	}
 	
 	 @Test
-	 public void a4_bootStrapButtonEnablingOrDisablingTest()throws Exception
+	 public void a4_clickOnParticularBootStrapButtonToEnablingOrDisablingCategoryTest()throws Exception
 	 {
-		 String CategoryName = "Necklace";;
+		 String CategoryName = "Bangles";
 		 String SubCategoryName = "Chains"+jUtil.getRandomNum();
 		 
 		 Thread.sleep(5000);
@@ -137,28 +137,24 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	     
 	     Thread.sleep(2000);
 	     
+	     Ecommerce_SubCategoryPage esPage = new Ecommerce_SubCategoryPage(driver);
+	     esPage.getAddSubCategoryBtn().click();
+	     
+	     Thread.sleep(2000);
+	     
 	     Ecommerce_SubCategory_AddSubcategoryPage ecscascPage = new Ecommerce_SubCategory_AddSubcategoryPage(driver);
 	     ecscascPage.addSubCategory(driver, CategoryName, SubCategoryName);
 	     
 	     Thread.sleep(2000);
 	     
 	     Ecommerce_SubCategoryPage escPage = new Ecommerce_SubCategoryPage(driver);
-	     escPage.clickOnParticularSchemeBootstrapBtn(driver, CategoryName, SubCategoryName);
+	     escPage.clickOnParticularCategoryBootstrapBtn(driver, CategoryName, SubCategoryName);
 	     
 		 Thread.sleep(2000);
 		 
+		 escPage.clickOnParticularSubCategoryDeleteBtn(driver, CategoryName, SubCategoryName);
+		 
 	 }
 	
-	 @Test
-	 
-	 public void a5_deleting1ParticularSubCategory()throws Exception
-	 {
-		 Thread.sleep(5000);
-	     driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-	     Thread.sleep(2000);
-	     driver.findElement(By.xpath("//a[.='Sub Category']")).click();
-	     Thread.sleep(2000); 
-	     driver.findElement(By.xpath("DELETE OPTION"));
-	 }
 
 }

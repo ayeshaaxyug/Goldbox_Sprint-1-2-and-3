@@ -17,14 +17,12 @@ import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class E_CommerceProductInfo {
+public class E_ECommerce_Product_All_Actions {
 	
     JavaUtility jUtil = new JavaUtility();
-	
 	String Bangles = "Bangles"+jUtil.getRandomNum();
 	
 	@Test 
-	
 	public void eCommerceProductInfo() throws Exception
 	{
 		
@@ -36,7 +34,7 @@ public class E_CommerceProductInfo {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2023",Keys.ENTER);
+        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(9000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(3000);
@@ -53,7 +51,7 @@ public class E_CommerceProductInfo {
         Select CategoryNameDrpDwn = new Select(CategorynameDrpDwnElement);
 
         // Select an option by visible text
-        CategoryNameDrpDwn.selectByVisibleText("Necklace");
+        CategoryNameDrpDwn.selectByVisibleText("Bangles");
         
         Thread.sleep(3000);
         
@@ -63,7 +61,7 @@ public class E_CommerceProductInfo {
         Select SubCategorynameDrpDwn = new Select(SubCategorynameDrpDwnElement);
 
         // Select an option by visible text
-        SubCategorynameDrpDwn.selectByVisibleText("Gold Necklace");
+        SubCategorynameDrpDwn.selectByVisibleText("Gold Bangles");
         
         Thread.sleep(3000);
         
@@ -73,7 +71,7 @@ public class E_CommerceProductInfo {
         Select BrandnameDrpDwn = new Select(BrandnameDrpDwnElement);
 
         // Select an option by visible text
-        BrandnameDrpDwn.selectByVisibleText("Matrika");
+        BrandnameDrpDwn.selectByVisibleText("Gold Box");
         
         Thread.sleep(3000);
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='categoryname']/../following-sibling::div//select[@formcontrolname='subcategoryname']/../following-sibling::div//select[@formcontrolname='brandname']/../following-sibling::div//input[@formcontrolname='productname']")).sendKeys("NeckPiece");
@@ -92,7 +90,7 @@ public class E_CommerceProductInfo {
         Thread.sleep(3000);
         
         WebElement SelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='categoryname']/../following-sibling::div//select[@formcontrolname='subcategoryname']/../following-sibling::div//select[@formcontrolname='brandname']/../following-sibling::div//input[@formcontrolname='productname']/../following-sibling::div//input[@placeholder='Enter VA%']/../following-sibling::div//select[@formcontrolname='carat']/../following-sibling::div//select[@formcontrolname='type']"));
-
+        
         // Create a Select object from the dropdown element
         Select SelectTypeCaratDrpDwn = new Select(SelectTypeDrpDwnElement);
 

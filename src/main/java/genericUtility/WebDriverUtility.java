@@ -451,6 +451,13 @@ public class WebDriverUtility {
 		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 	}
 	
+	public void scrollPageUp() throws Exception
+	{
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_PAGE_UP);
+		r.keyRelease(KeyEvent.VK_PAGE_UP);
+	}
+	
 }
 
 
