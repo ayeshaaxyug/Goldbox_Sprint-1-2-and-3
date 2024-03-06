@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_3_Positive.F_ECommerce_Transactions_All_Actions">
+      <class name="sprint_3_Positive.E_ECommerce_Product_All_Actions">
         <methods>
-          <include name="eCommerceTransactions"/>
+          <include name="asConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="eCommerceProductInfo"/>
+          <include name="acConfig"/>
         </methods>
-      </class> <!-- sprint_3_Positive.F_ECommerce_Transactions_All_Actions -->
+      </class> <!-- sprint_3_Positive.E_ECommerce_Product_All_Actions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

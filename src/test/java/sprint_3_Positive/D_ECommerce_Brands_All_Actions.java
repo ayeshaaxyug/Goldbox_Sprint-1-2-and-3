@@ -16,7 +16,7 @@ import objectRepository.Ecommerce_BrandsPage;
 import objectRepository.Ecommerce_Brands_AddBrandPage;
 import objectRepository.Ecommerce_Brands_UpdateBrandPage;
 
-public class C_ECommerce_Brands_All_Actions extends FMS_BaseClass {
+public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	
 	JavaUtility jUtil = new JavaUtility();
 	WebDriverUtility wUtil = new WebDriverUtility();

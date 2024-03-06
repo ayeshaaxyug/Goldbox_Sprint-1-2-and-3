@@ -33,7 +33,7 @@ public class Ecommerce_EcomTransactionsPage {
 	{
 		SearchEdt.sendKeys(Name);
 	}
-	Pending
+	
 	
 	
 }

@@ -12,7 +12,9 @@ import objectRepository.DashboardPage;
 import objectRepository.EcommercePage;
 import objectRepository.Ecommerce_EcomTransactionsPage;
 
-public class F_ECommerce_Transactions_All_Actions extends FMS_BaseClass {
+public class F_ECom_Transactions_All_Actions extends FMS_BaseClass {
+	
+	String Name = "naresh";
 	
 	@Test
 	public void a_ECommerceTransactionsTest() throws Exception
@@ -27,7 +29,7 @@ public class F_ECommerce_Transactions_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         Ecommerce_EcomTransactionsPage eePage = new Ecommerce_EcomTransactionsPage(driver);
-        eePage.s
+        eePage.searchTransactionWithName(driver, Name);
         
 		
 	}

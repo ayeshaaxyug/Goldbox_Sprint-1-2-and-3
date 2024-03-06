@@ -23,7 +23,7 @@ import objectRepository.Ecommerce_EcommerceOrders_FilterPage;
 import objectRepository.Ecommerce_EcommerceOrders_OrderedProductsPage;
 import objectRepository.Ecommerce_EcommerceOrders_StatusPage;
 
-public class D_Commerce_Orders_All_Actions extends FMS_BaseClass {
+public class E_ECommerce_Orders_All_Actions extends FMS_BaseClass {
 	
 	WebDriverUtility wUtil = new WebDriverUtility();
 	

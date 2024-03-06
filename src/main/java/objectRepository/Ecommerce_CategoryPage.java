@@ -21,8 +21,8 @@ public class Ecommerce_CategoryPage {
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PrevPageBtn;
-	
-  
+	 
+    
 	//Rule-3:Create a constructor to initilise these elements
     
 	public Ecommerce_CategoryPage(WebDriver driver)
@@ -77,7 +77,7 @@ public class Ecommerce_CategoryPage {
 	
 	public void clickOnParticularCategoryBootStrapBtn(WebDriver driver, String EditCategoryName)
 	{
-		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../fo     llowing-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")).click();
+		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")).click();
 	}
 	
 	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String EditCategoryName)
