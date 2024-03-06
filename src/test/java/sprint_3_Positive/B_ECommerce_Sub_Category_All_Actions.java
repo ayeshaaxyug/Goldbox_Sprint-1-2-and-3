@@ -24,6 +24,7 @@ import objectRepository.Ecommerce_SubCategory_EditSubcategoryPage;
 public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	
 	JavaUtility jUtil = new JavaUtility();
+	
 	WebDriverUtility wUtil = new WebDriverUtility();
 	
 	String Rings = "Rings"+jUtil.getRandomNum();
