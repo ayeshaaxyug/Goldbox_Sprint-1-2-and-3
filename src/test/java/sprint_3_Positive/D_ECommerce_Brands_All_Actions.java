@@ -1,21 +1,17 @@
 package sprint_3_Positive;
 
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.FMS_BaseClass;
 import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.DashboardPage;
 import objectRepository.EcommercePage;
 import objectRepository.Ecommerce_BrandsPage;
 import objectRepository.Ecommerce_Brands_AddBrandPage;
 import objectRepository.Ecommerce_Brands_UpdateBrandPage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	
 	JavaUtility jUtil = new JavaUtility();
@@ -23,7 +19,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	
 	String BrandName = "BrandName"+jUtil.getRandomNum();
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 1)
 	public void a_addingBrandTest()throws Exception
 	{
 		Thread.sleep(5000);
@@ -52,7 +48,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	}
 	
 	   
-	@Test  
+	@Test(groups = "sprint-3", priority = 2)
 	public void b_updateBrandTest() throws Exception
 	{
         Thread.sleep(5000);
@@ -88,7 +84,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	}
 	
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 3)
 	public void c_ClickOnParticularBrandEnableDisableBootStrapButton()throws Exception
 	{
 		Thread.sleep(5000);
@@ -120,7 +116,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	}
 	
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 3)
 	public void d_deletingParticularBrandTest() throws Exception
 	{
         Thread.sleep(5000);

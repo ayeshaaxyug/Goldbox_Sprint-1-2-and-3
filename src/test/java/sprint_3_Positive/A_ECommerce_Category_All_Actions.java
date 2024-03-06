@@ -15,7 +15,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 	
 	JavaUtility jUtil = new JavaUtility();
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 1)
 	public void a1_addingCaterogeyTest() throws Exception 
 	{
 		String CategoryName = "Chains"+jUtil.getRandomNum();
@@ -47,7 +47,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 	}
 	
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 2)
 	public void a2_editingCategoryTest()throws Exception
 	{
 		String CategoryName = "Chains"+jUtil.getRandomNum();
@@ -86,7 +86,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 		
 	}
 	
-	  @Test
+	  @Test(groups = "sprint-3", priority = 3)
 	  public void a3_categoryBootStrapButtonTurningOnOrOffTest() throws Exception
 	  {
 		    String EditCategoryName = "Chains"+jUtil.getRandomNum();

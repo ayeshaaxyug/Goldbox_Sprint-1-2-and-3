@@ -1,21 +1,8 @@
 package sprint_3_Positive;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-
 import genericUtility.FMS_BaseClass;
-import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.DashboardPage;
 import objectRepository.EcommercePage;
 import objectRepository.Ecommerce_EcommerceOrdersPage;
@@ -33,7 +20,7 @@ public class E_ECommerce_Orders_All_Actions extends FMS_BaseClass {
 	String EndDate = "25/02/2024";
 	String MobileNumber = "918500298784";
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 1)
 	public void eCommerceOrders()throws Exception
 	{
         Thread.sleep(5000);

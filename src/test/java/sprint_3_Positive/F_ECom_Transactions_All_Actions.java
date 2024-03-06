@@ -1,13 +1,7 @@
 package sprint_3_Positive;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
 import genericUtility.FMS_BaseClass;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.DashboardPage;
 import objectRepository.EcommercePage;
 import objectRepository.Ecommerce_EcomTransactionsPage;
@@ -16,7 +10,7 @@ public class F_ECom_Transactions_All_Actions extends FMS_BaseClass {
 	
 	String Name = "naresh";
 	
-	@Test
+	@Test(groups = "sprint-3", priority = 1)
 	public void a_ECommerceTransactionsTest() throws Exception
 	{
         Thread.sleep(5000);

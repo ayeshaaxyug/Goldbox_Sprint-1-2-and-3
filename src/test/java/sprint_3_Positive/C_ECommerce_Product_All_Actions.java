@@ -1,5 +1,6 @@
 package sprint_3_Positive;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.FMS_BaseClass;
 import genericUtility.JavaUtility;
@@ -16,6 +17,7 @@ import objectRepository.Ecommerce_UpdateProductDetailsPage;
 import objectRepository.Ecommerce_UpdateProductSizesPage;
 import objectRepository.Ecommerce_UpdateProductStone_But_UpdateProductSizePage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
 	
     JavaUtility jUtil = new JavaUtility();
@@ -35,7 +37,7 @@ public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
 	String EditStoneName = "White Pearl", EditStoneColour = "White", EditPrice = "4000", EditNoOfStones = "3";
 	String PEditProductName = "Bangles", PEditVaPercent = "12", PEditPrice = "36000", PEditSize = "10", PEditWeight = "10", PEditDescription = "Excellent Product";
 	
-	@Test 
+	@Test (groups = "sprint-3", priority = 1)
 	 public void eCommerceProductInfo() throws Exception
 	{
 		Thread.sleep(5000);
