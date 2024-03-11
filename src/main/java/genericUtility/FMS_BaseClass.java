@@ -21,13 +21,12 @@ import objectRepository.MyProfilePage;
 
 public class FMS_BaseClass {
 
-
 	public JavaUtility jUtility=new JavaUtility();
 	public WebDriverUtility wUtility=new WebDriverUtility();
 	public ExcelFileUtility eUtility=new ExcelFileUtility();
 	public PropertyFileUtility pUtility=new PropertyFileUtility();
 	
-	public WebDriver driver = null;
+	public WebDriver driver;
 	public static WebDriver sDriver;
 	
 	    @BeforeSuite(alwaysRun = true)
@@ -105,33 +104,33 @@ public class FMS_BaseClass {
 	@AfterMethod(groups={"sprint-1","Sprint-2"})
 		public void amConfig() throws Exception
 		{
-//		    Thread.sleep(1000);
-//		    
-//		    DashboardPage dbPage = new DashboardPage(driver);
-//		    dbPage.clickOnMyProfileLink(driver);
-//		    
-//		    MyProfilePage mpPage = new MyProfilePage(driver);
-//		    mpPage.logoutOfApplication();
-//		    
-//		    System.out.println("Logout Successfully");
+		    Thread.sleep(1000);
+		    
+		    DashboardPage dbPage = new DashboardPage(driver);
+		    dbPage.clickOnMyProfileLink(driver);
+		    
+		    MyProfilePage mpPage = new MyProfilePage(driver);
+		    mpPage.logoutOfApplication();
+		    
+		    System.out.println("Logout Successfully");
 		}
         
 	@AfterClass(groups={"sprint-1","Sprint-2"})
 		public void acConfig() throws InterruptedException
 		{
-//		try 
-//		{
-//			Thread.sleep(1000);
-//		} 
-//		catch (Exception e) 
-//		{
-//			Thread.sleep(1000);
-//		}
-//		finally 
-//		{
-//			driver.quit();
-//			System.out.println("Browser Closed Successfully");
-//		}
+		try 
+		{
+			Thread.sleep(1000);
+		} 
+		catch (Exception e) 
+		{
+			Thread.sleep(1000);
+		}
+		finally 
+		{
+			driver.quit();
+			System.out.println("Browser Closed Successfully");
+		}
 		}
         
 	@AfterSuite(groups={"sprint-1","Sprint-2"})
