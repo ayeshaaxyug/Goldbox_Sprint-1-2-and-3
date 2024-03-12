@@ -40,18 +40,13 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
         Ecommerce_Category_AddCategoryPage eccacPage = new Ecommerce_Category_AddCategoryPage(driver);
         eccacPage.addCategory(driver, CategoryName);
         
-        
-        
-        
-        
 	}
-	
 	
 	@Test(groups = "sprint-3", priority = 2)
 	public void a2_editingCategoryTest()throws Exception
 	{
 		String CategoryName = "Chains"+jUtil.getRandomNum();
-		String EditCategoryName = "EdChains"+jUtil.getRandomNum();
+		String EditCategoryName = "EditChains"+jUtil.getRandomNum();
 		
         Thread.sleep(3000);
         
@@ -119,7 +114,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 		  
 		  
 	  }
-	
+	  
 	  @Test
 	  public void a4_deletingParticularCategoryTest() throws Exception
 	  {
@@ -153,7 +148,6 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 		    
 		  
 	  }
-	  
 	  
  }
 

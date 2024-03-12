@@ -33,11 +33,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[.='Add Brand']")).click();
@@ -76,11 +76,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[.='Add Brand']")).click();
@@ -124,11 +124,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[.='Add Brand']")).click();
@@ -140,7 +140,7 @@ public class E_Commerce_Brands {
         r.keyRelease(KeyEvent.VK_TAB);
         
         WebElement ChooseFileBtn = driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@formcontrolname='image']"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         
         WebDriverUtility wUtil = new WebDriverUtility();
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn);
@@ -193,11 +193,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
         
@@ -237,11 +237,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[.='Add Brand']")).click();
@@ -255,7 +255,7 @@ public class E_Commerce_Brands {
         r.keyRelease(KeyEvent.VK_TAB);
         
         WebElement ChooseFileBtn = driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@formcontrolname='image']"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         
         WebDriverUtility wUtil = new WebDriverUtility();
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn);
@@ -315,11 +315,11 @@ public class E_Commerce_Brands {
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Brands']")).click();
         Thread.sleep(2000);
 		

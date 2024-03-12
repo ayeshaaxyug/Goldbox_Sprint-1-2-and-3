@@ -36,9 +36,9 @@ public class E_Commerce_Orders {
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecommerce Orders']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         
         WebElement SearchDateEdt = driver.findElement(By.xpath("//input[@placeholder='Search...']"));
         SearchDateEdt.sendKeys("3/5/2024 - 3/22/2024");
@@ -80,9 +80,9 @@ public class E_Commerce_Orders {
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecommerce Orders']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
 		
         WebElement SearchDateEdt = driver.findElement(By.xpath("//input[@placeholder='Search...']"));
         SearchDateEdt.sendKeys("'9666441040");
@@ -122,9 +122,9 @@ public class E_Commerce_Orders {
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecommerce Orders']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[@class='btn btn-filter']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Start date']")).sendKeys("22/02/2024");
@@ -144,7 +144,7 @@ public class E_Commerce_Orders {
         	if(MobileNumberEdt.isDisplayed()) 
             {
     			w.takeScreenShot(driver, "c_ordersEnteringInFilterOptionTest");
-    			Thread.sleep(7000);
+    			Thread.sleep(2000);
     			driver.quit();
     		}
             else 
@@ -171,7 +171,6 @@ public class E_Commerce_Orders {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
@@ -179,9 +178,9 @@ public class E_Commerce_Orders {
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecommerce Orders']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         
         Actions act = new Actions(driver);
         act.moveByOffset(200, 0).perform();
@@ -228,7 +227,6 @@ public class E_Commerce_Orders {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
         driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
@@ -236,9 +234,9 @@ public class E_Commerce_Orders {
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Ecommerce Orders']")).click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         
         Actions act = new Actions(driver);
         act.moveByOffset(200, 0).perform();

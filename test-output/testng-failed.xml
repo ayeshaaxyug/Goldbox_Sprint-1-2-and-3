@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sprint_3_Negative.E_Commerce_Brands">
+      <class name="flipkart.Printing">
         <methods>
-          <include name="a_addingBrandsByPassingNullValuesErrorTest"/>
+          <include name="names"/>
         </methods>
-      </class> <!-- sprint_3_Negative.E_Commerce_Brands -->
+      </class> <!-- flipkart.Printing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
