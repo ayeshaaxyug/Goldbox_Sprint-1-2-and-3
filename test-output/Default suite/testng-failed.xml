@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipkart.Printing">
+      <class name="sprint_3_Negative.C_E_Commerce_Sub_Categories">
         <methods>
-          <include name="names"/>
+          <include name="k_subCategoryDeleteButtonErrorTest"/>
         </methods>
-      </class> <!-- flipkart.Printing -->
+      </class> <!-- sprint_3_Negative.C_E_Commerce_Sub_Categories -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

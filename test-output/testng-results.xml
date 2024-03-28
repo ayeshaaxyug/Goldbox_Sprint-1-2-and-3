@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-12T09:36:36 IST" name="Default suite" finished-at="2024-03-12T09:36:51 IST" duration-ms="15146">
+  <suite started-at="2024-03-28T14:45:31 IST" name="Default suite" finished-at="2024-03-28T14:50:32 IST" duration-ms="300517">
     <groups>
+      <group name="Sprint-3">
+        <method signature="C_E_Commerce_Sub_Categories.a_ClickOnSubcategoriesLinkSubCategoryPageShoultNotDisplayErrorTest()[pri:1, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="a_ClickOnSubcategoriesLinkSubCategoryPageShoultNotDisplayErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.b_SubCategory_SearchEdit_SearchedInvalidCategoryShouldDisplayErrorTest()[pri:2, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="b_SubCategory_SearchEdit_SearchedInvalidCategoryShouldDisplayErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.c_addingSubCategoryNullErrorTest()[pri:3, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="c_addingSubCategoryNullErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.d_addingSubCategoryByGivingOnlyCategoryNameErrorTest()[pri:4, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="d_addingSubCategoryByGivingOnlyCategoryNameErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.e_Adding_SubCategoryByGiving2ValuesErrorTest()[pri:5, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="e_Adding_SubCategoryByGiving2ValuesErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.e_Adding_SubCategoryByGivingValidDetailsPassTest()[pri:6, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="e_Adding_SubCategoryByGivingValidDetailsPassTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.f_SubCategoryEditButtonErrorTest()[pri:7, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="f_SubCategoryEditButtonErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.g_updatingWithoutPassingDetailsErrorTest()[pri:8, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="g_updatingWithoutPassingDetailsErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.h_updatingByGivingOnlyCategoryNameErrorTest()[pri:9, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="h_updatingByGivingOnlyCategoryNameErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.i_updatingSubCategoryByPassing2ValuesErrorTest()[pri:9, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="i_updatingSubCategoryByPassing2ValuesErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.j_subCategoryBootStrapButtonErrorTest()[pri:10, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="j_subCategoryBootStrapButtonErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.k_subCategoryDeleteButtonErrorTest()[pri:11, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="k_subCategoryDeleteButtonErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+        <method signature="C_E_Commerce_Sub_Categories.l_closingAddSubCategoryPageErrorTest()[pri:12, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" name="l_closingAddSubCategoryPageErrorTest" class="sprint_3_Negative.C_E_Commerce_Sub_Categories"/>
+      </group> <!-- Sprint-3 -->
     </groups>
-    <test started-at="2024-03-12T09:36:36 IST" name="Default test" finished-at="2024-03-12T09:36:51 IST" duration-ms="15146">
-      <class name="flipkart.Printing">
-        <test-method signature="names()[pri:0, instance:flipkart.Printing@35d019a3]" started-at="2024-03-12T09:36:36 IST" name="names" finished-at="2024-03-12T09:36:51 IST" duration-ms="15098" status="PASS">
+    <test started-at="2024-03-28T14:45:31 IST" name="Default test" finished-at="2024-03-28T14:50:32 IST" duration-ms="300517">
+      <class name="sprint_3_Negative.C_E_Commerce_Sub_Categories">
+        <test-method signature="a_ClickOnSubcategoriesLinkSubCategoryPageShoultNotDisplayErrorTest()[pri:1, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:45:31 IST" name="a_ClickOnSubcategoriesLinkSubCategoryPageShoultNotDisplayErrorTest" finished-at="2024-03-28T14:45:51 IST" duration-ms="20164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- names -->
-      </class> <!-- flipkart.Printing -->
+        </test-method> <!-- a_ClickOnSubcategoriesLinkSubCategoryPageShoultNotDisplayErrorTest -->
+        <test-method signature="b_SubCategory_SearchEdit_SearchedInvalidCategoryShouldDisplayErrorTest()[pri:2, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:45:51 IST" name="b_SubCategory_SearchEdit_SearchedInvalidCategoryShouldDisplayErrorTest" finished-at="2024-03-28T14:46:13 IST" duration-ms="21288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_SubCategory_SearchEdit_SearchedInvalidCategoryShouldDisplayErrorTest -->
+        <test-method signature="c_addingSubCategoryNullErrorTest()[pri:3, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:46:13 IST" name="c_addingSubCategoryNullErrorTest" finished-at="2024-03-28T14:46:36 IST" duration-ms="23602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addingSubCategoryNullErrorTest -->
+        <test-method signature="d_addingSubCategoryByGivingOnlyCategoryNameErrorTest()[pri:4, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:46:36 IST" name="d_addingSubCategoryByGivingOnlyCategoryNameErrorTest" finished-at="2024-03-28T14:46:59 IST" duration-ms="23046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_addingSubCategoryByGivingOnlyCategoryNameErrorTest -->
+        <test-method signature="e_Adding_SubCategoryByGiving2ValuesErrorTest()[pri:5, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:46:59 IST" name="e_Adding_SubCategoryByGiving2ValuesErrorTest" finished-at="2024-03-28T14:47:26 IST" duration-ms="26739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_Adding_SubCategoryByGiving2ValuesErrorTest -->
+        <test-method signature="e_Adding_SubCategoryByGivingValidDetailsPassTest()[pri:6, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:47:26 IST" name="e_Adding_SubCategoryByGivingValidDetailsPassTest" finished-at="2024-03-28T14:47:53 IST" duration-ms="26875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_Adding_SubCategoryByGivingValidDetailsPassTest -->
+        <test-method signature="f_SubCategoryEditButtonErrorTest()[pri:7, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:47:53 IST" name="f_SubCategoryEditButtonErrorTest" finished-at="2024-03-28T14:48:11 IST" duration-ms="17641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_SubCategoryEditButtonErrorTest -->
+        <test-method signature="g_updatingWithoutPassingDetailsErrorTest()[pri:8, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:48:11 IST" name="g_updatingWithoutPassingDetailsErrorTest" finished-at="2024-03-28T14:48:34 IST" duration-ms="22991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_updatingWithoutPassingDetailsErrorTest -->
+        <test-method signature="h_updatingByGivingOnlyCategoryNameErrorTest()[pri:9, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:48:34 IST" name="h_updatingByGivingOnlyCategoryNameErrorTest" finished-at="2024-03-28T14:49:03 IST" duration-ms="28849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_updatingByGivingOnlyCategoryNameErrorTest -->
+        <test-method signature="i_updatingSubCategoryByPassing2ValuesErrorTest()[pri:9, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:49:03 IST" name="i_updatingSubCategoryByPassing2ValuesErrorTest" finished-at="2024-03-28T14:49:30 IST" duration-ms="27215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_updatingSubCategoryByPassing2ValuesErrorTest -->
+        <test-method signature="j_subCategoryBootStrapButtonErrorTest()[pri:10, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:49:30 IST" name="j_subCategoryBootStrapButtonErrorTest" finished-at="2024-03-28T14:49:50 IST" duration-ms="20631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- j_subCategoryBootStrapButtonErrorTest -->
+        <test-method signature="k_subCategoryDeleteButtonErrorTest()[pri:11, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:49:50 IST" name="k_subCategoryDeleteButtonErrorTest" finished-at="2024-03-28T14:50:10 IST" duration-ms="19612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- k_subCategoryDeleteButtonErrorTest -->
+        <test-method signature="l_closingAddSubCategoryPageErrorTest()[pri:12, instance:sprint_3_Negative.C_E_Commerce_Sub_Categories@6302bbb1]" started-at="2024-03-28T14:50:10 IST" name="l_closingAddSubCategoryPageErrorTest" finished-at="2024-03-28T14:50:32 IST" duration-ms="21816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- l_closingAddSubCategoryPageErrorTest -->
+      </class> <!-- sprint_3_Negative.C_E_Commerce_Sub_Categories -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

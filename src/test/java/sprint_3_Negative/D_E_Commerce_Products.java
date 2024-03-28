@@ -14,28 +14,31 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import genericUtility.PropertyFileUtility;
 import genericUtility.WebDriverUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class E_Commerce_Products {
+public class D_E_Commerce_Products {
 	
 	WebDriverUtility w = new WebDriverUtility();
+	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
 	//28TC
 	
 	@Test(groups = "Sprint-3", priority = 1)
 	public void a_ClickOnproductsLinkProductListPageShouldzNotDisplayErrorTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -65,17 +68,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 2)
 	public void b_searchEditFeildProductTest() throws Exception
 	{
-		
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -107,17 +110,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 3)
 	public void c_addingProductNullTest() throws Exception
 	{
-		
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -154,16 +157,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 4)
 	public void d_productsGivingOnlyCategoryNameTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -209,16 +213,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 5)
 	public void e_addingProductsByPassing2ValuesTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -271,16 +276,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 6)
 	public void f_addingProductsByPassing3ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -344,16 +350,17 @@ public class E_Commerce_Products {
 	 @Test(groups = "Sprint-3", priority = 7)
 	 public void g_addingProductsByPassing4ValuesTest()throws Exception
 	 {
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+				
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+		driver.get(URL);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -419,16 +426,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 8)
 	public void h_addingProductsByPassing5ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -499,16 +507,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 9)
 	public void i_addingProductsByPassing6ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -586,16 +595,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 10)
 	public void j_addingProductsByPassing7ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -683,16 +693,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 11)
 	public void k_addingProductsByPassing8ValuesTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -782,16 +793,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 12)
 	public void l_addingProductsByPassing9ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -883,16 +895,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 13)
 	public void m_addingProductsByPassing10ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -987,16 +1000,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 14)
 	public void n_addingProductsByPassing11ValuesTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1093,16 +1107,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 15)
 	public void o_addingProductsByPassing12ValuesTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1219,16 +1234,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 16)
 	public void p_addProductsPageCloseTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1263,16 +1279,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 17)
 	public void q_productsWeight_SizePageTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1304,16 +1321,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 18)
 	public void r_productsWeight_SizePageEditPageTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1348,16 +1366,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 19)
 	public void s_productsWeight_SizePageEditPage_clearingDetailsTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1397,16 +1416,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 20)
 	public void t_productsWeight_SizePageEditPage_ClosingTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1442,16 +1462,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 21)
 	public void u_productsWeight_SizePageEditPage_BootStrapButtonTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1485,16 +1506,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 22)
 	public void v_productsWeight_SizePageEditPage_DeleteButtonTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1529,16 +1551,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 23)
 	public void w_product_StonePage_Adding_NullTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1574,16 +1597,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 24)
 	public void x_product_StonePage_Adding_StoneNameTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1620,16 +1644,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 25)
 	public void y_product_StonePage_Adding_StoneColourTest()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1666,16 +1691,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 26)
 	public void z_product_StonePage_Adding_StonePriceTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1713,16 +1739,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 27)
 	public void z27_product_StonePage_Adding_StoneDetails_SuccessfullyTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1759,16 +1786,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 28)
 	public void z28_product_StonePage_Adding_StoneDetails_ClearingTest() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1810,18 +1838,19 @@ public class E_Commerce_Products {
 	//56TC
 	
 	@Test(groups = "Sprint-3", priority = 29)
-	public void z29_productPageActionButton_ClearingData3Test() throws Exception{
-		
+	public void z29_productPageActionButton_ClearingData3Test() throws Exception
+	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1882,16 +1911,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 30)
 	public void z30_productPageActionButton_ClearingData6Test()throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
@@ -1938,16 +1968,17 @@ public class E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 31)
 	public void z31_productPageActionButton_ClearingData8Test() throws Exception
 	{
+		String URL = pUtil.readDataFromPropertyFile("url");
+		String USERNAME = pUtil.readDataFromPropertyFile("username");
+		String PASSWORD = pUtil.readDataFromPropertyFile("password");
+			
 		WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        Thread.sleep(2000);
-        driver.get("http://stg-fms-goldbox.goldsikka.com/signin");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("soumya@gmail.com");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("goldsikka@2024",Keys.ENTER);
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	    driver.get(URL);
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
         Thread.sleep(8000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
