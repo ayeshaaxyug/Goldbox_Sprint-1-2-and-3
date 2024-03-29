@@ -9,17 +9,17 @@ public class Ecommerce_Products_AddProductStonePage {
 
     //Rule-1 :- Find Web-Elements using FindBy Annotations
 	
-    @FindBy(xpath="//h1[.='Add Product Size']/following-sibling::button[@aria-label='Close']")private WebElement CloseBtn;
+    @FindBy(xpath="//h1[.='Add Product Stone']/following-sibling::button[@aria-label='Close']")private WebElement CloseBtn;
     
-    @FindBy(xpath="//h1[.='Add Product Size']/../following-sibling::div//input[@placeholder='Enter Stone Name']")private WebElement StoneNameEdt;
+    @FindBy(xpath="//h1[.='Add Product Stone']/../following-sibling::div//input[@placeholder='Enter Stone Name']")private WebElement StoneNameEdt;
     
-    @FindBy(xpath="//h1[.='Add Product Size']/../following-sibling::div//input[@placeholder='Enter Stone Colour']")private WebElement StoneColourEdt;
+    @FindBy(xpath="//h1[.='Add Product Stone']/../following-sibling::div//input[@placeholder='Enter Stone Colour']")private WebElement StoneColourEdt;
   
-    @FindBy(xpath="//h1[.='Add Product Size']/../following-sibling::div//input[@placeholder=' Enter Stone Price']")private WebElement StonePriceEdt;
+    @FindBy(xpath="//h1[.='Add Product Stone']/../following-sibling::div//input[@placeholder=' Enter Stone Price']")private WebElement StonePriceEdt;
     
-    @FindBy(xpath="//h1[.='Add Product Size']/../following-sibling::div//input[@placeholder=' Enter Number Of Stones']")private WebElement NoOfStonesEdt;
+    @FindBy(xpath="//h1[.='Add Product Stone']/../following-sibling::div//input[@placeholder=' Enter Number Of Stones']")private WebElement NoOfStonesEdt;
     
-    @FindBy(xpath="//h1[.='Add Product Size']/../following-sibling::div/following-sibling::div/button[.='Add']")private WebElement AddBtn;
+    @FindBy(xpath="//h1[.='Add Product Stone']/../following-sibling::div/following-sibling::div/button[.='Add']")private WebElement AddBtn;
     
     
 	//Rule-3:Create a constructor to initilise these elements

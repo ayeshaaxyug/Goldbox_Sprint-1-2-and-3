@@ -6,6 +6,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,7 +41,7 @@ public class Ecommerce_UpdateProductDetailsPage {
     
     @FindBy(xpath="//h1[.='Update Product Details']/../following-sibling::div//textarea[@formcontrolname='description']")private WebElement DescriptionEdt;
 	
-    @FindBy(xpath="//h1[.='Update Product Details']/../following-sibling::div//input[@type='file']")private WebElement ChooseFileBtn;
+    @FindBy(xpath="//h1[.='Update Product Details']/../following-sibling::div//input[@formcontrolname='image']")private WebElement ChooseFileBtn;
     
     @FindBy(xpath="//h1[.='Update Product Details']/../following-sibling::div/following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
   
@@ -120,11 +121,11 @@ public class Ecommerce_UpdateProductDetailsPage {
         Robot r = new Robot();
 		
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CategoryDrpDwn, 2);
+		wUtil.handleDropdownByIndex(CategoryDrpDwn, 6);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 1);
+		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 2);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(BrandNameDrpDwn, 2);
+		wUtil.handleDropdownByIndex(BrandNameDrpDwn, 9);
 		Thread.sleep(2000);
 		ProductNameEdt.clear();
 		Thread.sleep(2000);
@@ -158,7 +159,7 @@ public class Ecommerce_UpdateProductDetailsPage {
 		Thread.sleep(2000);
 		r.keyPress(KeyEvent.VK_CONTROL);
         r.delay(2000);
-        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\Necklace.jpg");
+        StringSelection ss = new StringSelection("C:\\Users\\admin\\Pictures\\Saved Pictures\\Bangles.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         r.keyPress(KeyEvent.VK_CONTROL);
         r.keyPress(KeyEvent.VK_V);

@@ -45,7 +45,7 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	public void a2_adding1SubCategoryTest() throws Exception
 	{
 		
-		String CategoryName = "Necklace";;
+		String CategoryName = "Bangles";;
 		String SubCategoryName = "Chains"+jUtil.getSingleRandomnumber();;
 		
         Thread.sleep(2000);
@@ -75,7 +75,8 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	{
     	String CategoryName = "Bangles";;
 		String SubCategoryName = "Chains"+jUtil.getRandomNum();
-		String EditCategoryName = "Gold Chains";;
+//		String EditCategoryName = "Gold Chains";
+		String EditCategoryName = "Nose Pins";
 		String EditSubCategoryName = "Chains"+jUtil.getRandomNum();
 		
 		

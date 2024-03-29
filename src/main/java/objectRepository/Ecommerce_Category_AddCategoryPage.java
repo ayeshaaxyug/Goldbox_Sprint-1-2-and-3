@@ -79,7 +79,7 @@ public class Ecommerce_Category_AddCategoryPage {
 		
         r.keyPress(KeyEvent.VK_CONTROL);
         r.delay(2000);
-        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\download.jpg");
+        StringSelection ss = new StringSelection("C:\\Users\\admin\\Pictures\\Saved Pictures\\Bangles.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         r.keyPress(KeyEvent.VK_CONTROL);
         r.keyPress(KeyEvent.VK_V);

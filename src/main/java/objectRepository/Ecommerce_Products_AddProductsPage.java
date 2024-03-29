@@ -122,7 +122,7 @@ public class Ecommerce_Products_AddProductsPage {
 		Robot r = new Robot();
 		
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CategoryDrpDwn, 1);
+		wUtil.handleDropdownByIndex(CategoryDrpDwn, 5);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 1);
 		Thread.sleep(2000);
@@ -148,7 +148,7 @@ public class Ecommerce_Products_AddProductsPage {
 		Thread.sleep(2000);
 		r.keyPress(KeyEvent.VK_CONTROL);
         r.delay(2000);
-        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\Necklace.jpg");
+        StringSelection ss = new StringSelection("C:\\Users\\admin\\Pictures\\Saved Pictures\\Bangles.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         r.keyPress(KeyEvent.VK_CONTROL);
         r.keyPress(KeyEvent.VK_V);

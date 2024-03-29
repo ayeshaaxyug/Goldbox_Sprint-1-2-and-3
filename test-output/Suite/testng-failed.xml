@@ -3,17 +3,66 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="1" parallel="tests" name="Test(failed)">
     <classes>
-      <class name="sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User">
+      <class name="sprint_3_Positive.B_ECommerce_Sub_Category_All_Actions">
         <methods>
-          <include name="userSchemeSubscriptionUsingBookingAndBankingAccountTest"/>
           <include name="asConfig"/>
+          <include name="a2_adding1SubCategoryTest"/>
           <include name="bmConfig"/>
-          <include name="bcConfig"/>
           <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="a3_editing1SubCategoryTest"/>
+          <include name="bsConfig"/>
+          <include name="a4_clickOnParticularBootStrapButtonToEnablingOrDisablingCategoryTest"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- sprint_3_Positive.B_ECommerce_Sub_Category_All_Actions -->
+      <class name="sprint_3_Positive.E_ECommerce_Orders_All_Actions">
+        <methods>
+          <include name="asConfig"/>
+          <include name="eCommerceOrders"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- sprint_1_Positive.dSprint_1_UserSchemeSubscription_Demo_User -->
+      </class> <!-- sprint_3_Positive.E_ECommerce_Orders_All_Actions -->
+      <class name="sprint_3_Positive.A_ECommerce_Category_All_Actions">
+        <methods>
+          <include name="asConfig"/>
+          <include name="bmConfig"/>
+          <include name="a2_editingCategoryTest"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="a3_categoryBootStrapButtonTurningOnOrOffTest"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- sprint_3_Positive.A_ECommerce_Category_All_Actions -->
+      <class name="sprint_3_Positive.D_ECommerce_Brands_All_Actions">
+        <methods>
+          <include name="b_updateBrandTest"/>
+          <include name="asConfig"/>
+          <include name="d_deletingParticularBrandTest"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="c_ClickOnParticularBrandEnableDisableBootStrapButton"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- sprint_3_Positive.D_ECommerce_Brands_All_Actions -->
+      <class name="sprint_3_Positive.C_ECommerce_Product_All_Actions">
+        <methods>
+          <include name="eCommerceProductInfo"/>
+          <include name="asConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- sprint_3_Positive.C_ECommerce_Product_All_Actions -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

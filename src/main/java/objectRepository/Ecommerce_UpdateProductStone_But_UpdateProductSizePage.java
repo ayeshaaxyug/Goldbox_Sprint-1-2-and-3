@@ -7,17 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Ecommerce_UpdateProductStone_But_UpdateProductSizePage {
 
-    @FindBy(xpath="//h1[.='Update Product Sizes']/following-sibling::button[@aria-label='Close']")private WebElement CloseBtn;
+    @FindBy(xpath="//h1[.='Update Product Stone']/following-sibling::button[@aria-label='Close']")private WebElement CloseBtn;
     
-    @FindBy(xpath="//h1[.='Update Product Sizes']/../following-sibling::div//input[@placeholder='Enter Stone Name']")private WebElement StoneNameEdt;
+    @FindBy(xpath="//h1[.='Update Product Stone']/../following-sibling::div//input[@placeholder='Enter Stone Name']")private WebElement StoneNameEdt;
     
-    @FindBy(xpath="//h1[.='Update Product Sizes']/../following-sibling::div//input[@placeholder='Enter Stone Colour']")private WebElement StoneColourEdt;
+    @FindBy(xpath="//h1[.='Update Product Stone']/../following-sibling::div//input[@placeholder='Enter Stone Colour']")private WebElement StoneColourEdt;
     
-    @FindBy(xpath="//h1[.='Update Product Sizes']/../following-sibling::div//input[@placeholder=' Enter Stone Price']")private WebElement StonePriceEdt;
+    @FindBy(xpath="//h1[.='Update Product Stone']/../following-sibling::div//input[@placeholder=' Enter Stone Price']")private WebElement StonePriceEdt;
     
-    @FindBy(xpath="//h1[.='Update Product Sizes']/../following-sibling::div//input[@placeholder=' Enter Number Of Stones']")private WebElement NoOfStonesEdt;
+    @FindBy(xpath="//h1[.='Update Product Stone']/../following-sibling::div//input[@placeholder=' Enter Number Of Stones']")private WebElement NoOfStonesEdt;
     
-    @FindBy(xpath="//h1[.='Update Product Sizes']/../following-sibling::div/following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
+    @FindBy(xpath="//h1[.='Update Product Stone']/../following-sibling::div/following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
     
   
 	//Rule-3:Create a constructor to initilise these elements
